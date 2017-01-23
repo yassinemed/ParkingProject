@@ -72,14 +72,24 @@ CREATE TABLE OffresAbonnement(
 
 
 #------------------------------------------------------------
+# Table: Services
+#------------------------------------------------------------
+
+CREATE TABLE Services(
+        Id_Service  Varchar (25) NOT NULL ,
+        NomService  Varchar (200) NOT NULL ,
+        TypeService Varchar (150) NOT NULL ,
+        PRIMARY KEY (Id_Service )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
 # Table: Réservation
 #------------------------------------------------------------
 
 CREATE TABLE Reservation(
-        DateDebut           Date ,
-        DateFin             Date ,
-        HeureDebut          Time ,
-        HeureFin            Time ,
+        DateDebut           Datetime ,
+        DateFin             Datetime ,
         identifiantPlace    Varchar (50) NOT NULL ,
         IndentifiantClients Varchar (50) NOT NULL ,
         PRIMARY KEY (identifiantPlace ,IndentifiantClients )
@@ -91,10 +101,8 @@ CREATE TABLE Reservation(
 #------------------------------------------------------------
 
 CREATE TABLE Occupation(
-        DateDebut           Date ,
-        DateFin             Date ,
-        HeureDebut          Time ,
-        HeureFin            Time ,
+        DateDebut           Datetime ,
+        DateFin             Datetime ,
         IndentifiantClients Varchar (50) NOT NULL ,
         identifiantPlace    Varchar (50) NOT NULL ,
         PRIMARY KEY (IndentifiantClients ,identifiantPlace )
@@ -113,6 +121,17 @@ CREATE TABLE Abonnement(
         PRIMARY KEY (IndentifiantClients ,IdentifiantOffre )
 )ENGINE=InnoDB;
 
+
+#------------------------------------------------------------
+# Table: propose
+#------------------------------------------------------------
+
+CREATE TABLE propose(
+        IdentifiantPark Varchar (50) NOT NULL ,
+        Id_Service      Varchar (25) NOT NULL ,
+        PRIMARY KEY (IdentifiantPark ,Id_Service )
+)ENGINE=InnoDB;
+
 ALTER TABLE Place ADD CONSTRAINT FK_Place_IdentifiantPark FOREIGN KEY (IdentifiantPark) REFERENCES Parking(IdentifiantPark);
 ALTER TABLE OffresAbonnement ADD CONSTRAINT FK_OffresAbonnement_IdentifiantPark FOREIGN KEY (IdentifiantPark) REFERENCES Parking(IdentifiantPark);
 ALTER TABLE Reservation ADD CONSTRAINT FK_Reservation_identifiantPlace FOREIGN KEY (identifiantPlace) REFERENCES Place(identifiantPlace);
@@ -121,3 +140,5 @@ ALTER TABLE Occupation ADD CONSTRAINT FK_Occupation_IndentifiantClients FOREIGN 
 ALTER TABLE Occupation ADD CONSTRAINT FK_Occupation_identifiantPlace FOREIGN KEY (identifiantPlace) REFERENCES Place(identifiantPlace);
 ALTER TABLE Abonnement ADD CONSTRAINT FK_Abonnement_IndentifiantClients FOREIGN KEY (IndentifiantClients) REFERENCES Client(IndentifiantClients);
 ALTER TABLE Abonnement ADD CONSTRAINT FK_Abonnement_IdentifiantOffre FOREIGN KEY (IdentifiantOffre) REFERENCES OffresAbonnement(IdentifiantOffre);
+ALTER TABLE propose ADD CONSTRAINT FK_propose_IdentifiantPark FOREIGN KEY (IdentifiantPark) REFERENCES Parking(IdentifiantPark);
+ALTER TABLE propose ADD CONSTRAINT FK_propose_Id_Service FOREIGN KEY (Id_Service) REFERENCES Services(Id_Service);
