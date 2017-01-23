@@ -1,0 +1,11 @@
+nom;PlaceTotal;PlacePublique;PMR;type;adresse;surfaceM²;nbrNiveau;PrixQuartHeureJour;PrixQuartHeureNuit
+Antigone;252;246;6;souterrain;;4000;2;0,4;0,2
+Arc de Triomphe;451;441;10;souterrain;;9375;5;0,35;0,3
+Arceaux;208;203;5;surface;;5950;1;0,4;0,2
+Comédie;824;807;17;souterrain;;19800;4;0,35;0,3
+Europa;600;590;10;souterrain;;5560;2;0,4;0,2
+Foch-Préfecture;590;581;9;souterrain;;10750;5;0,35;0,3
+Gambetta;482;472;10;souterrain;;10950;1;0,35;0,3
+Hôtel de ville;543;528;15;souterrain;;;4;0,4;0,2
+Laissac;190;185;5;elevation;;8245;5;0,4;0,3
+Pitot;590;580;10;souterrain;;10800;3;0,35;0,2
