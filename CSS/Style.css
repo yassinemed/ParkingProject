@@ -1,0 +1,230 @@
+
+
+body {
+ background: url(../IMG/fond.png) no-repeat 50% 50% fixed; 
+ background-size: cover;
+ position:relative;
+height: 1000px;
+margin: 0;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0%;
+    width: 1100px;
+    overflow: hidden;
+    background-color: black;
+    
+}
+
+ul.topnav li {
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+	}
+	
+ul.topnav li a {
+	
+	display: block;
+    color: white;
+    padding: 16px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size:200%;
+    line-height: 2;
+    overflow: hidden;
+    word-wrap: break-word; 
+	}
+	
+#small{
+	padding: 0;
+	font-size: 10px;
+	position: relative;
+	float: right;
+	right: 0;
+	border-left:white 5px solid;
+}
+
+
+
+ul.topnav li a:hover {background-color: #555;}
+ul.topnav li.icon {display: none;}
+
+a {
+text-decoration: none;
+text-align: center;
+color: white;
+font-family: Avantgarde, sans-serif;
+overflow: hidden;
+}
+
+footer{
+background:black;
+position: fixed;
+bottom: 0;
+width: 100%;
+height:50px;
+color: black;
+text-align: center;
+font-size: 20px;
+vertical-align: bottom;
+}
+
+input[type=text] {
+	 display: block;
+    position: relative;
+}
+h1{
+text-align: center;
+}
+h2{
+	text-align: center;
+
+}
+
+input[type=password] {
+	display: block;
+	position: relative;
+
+}
+.password{
+	margin-left: 40%;
+    margin-top: -270px;
+    font-family: verdana;
+	
+}
+ input[type=submit]{
+ 	 display: block;
+    position: relative;
+    margin-right: 60px;
+    margin-left: auto;
+    margin-top: -2px;
+    width: 150px;
+    height: 50px;
+    background-color: #00006E;
+    border-style: ridge  black;
+    color: white;
+    font-family: verdana;
+    font-size: 20px;
+ }
+#cadre{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	border:solid black 2px;
+	height: 800px;
+	background-color: white;
+	opacity: 0.9;
+	font-family: verdana;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+#inscription{
+width: 44%;
+height: 520px;
+margin-top: 50px;
+margin-right: 55%;
+margin-left: 4%;
+padding-left: 5%;
+border:solid black 2px;
+background-color: white;
+opacity: 0.9;
+font-family: verdana;
+}
+#connexion{
+width: 35%;
+height: 350px;
+margin-left: 54%;
+margin-top: -480px;
+padding-left: 60px;
+border:solid black 2px;
+background-color: white;
+opacity: 0.9;
+font-family: verdana;
+}
+
+#carte{
+margin-top: 40px;
+border:solid black 2px;
+width: 600px;
+margin-left: -30px;
+} 
+
+
+#cadre1{
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	border:solid black 2px;
+	height: 800px;
+	background-color: white;
+	opacity: 0.9;
+	font-family: verdana;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+#info{
+	border:solid black 2px;
+	position: relative;
+	width: 30%;
+	height: 460px;
+	left: 600px;
+	top: -460px;
+	padding-left: 2%;
+}
+#infoo{
+	border:solid black 2px;
+	position: relative;
+	width: 30%;
+	left: 600px;
+	top: -450px;
+	padding-left: 2%;
+}
+.tab{
+border:solid black 2px;
+text-align: center;
+}
+.tab td{
+	border:solid black 2px;
+}
+
+#resv{
+margin-top: 20px;
+border:solid black 2px;
+width: 400px;
+margin-left: auto;
+margin-right: auto;
+padding: 5%;
+}
+
+
+#contact{
+	position:absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 50px;
+	text-align: center;
+	color: white;
+	background-color: black;
+
+}
+
+#titleP{
+font-size: 40px;
+
+}
+table{
+	border-collapse:collapse;
+}
+table, th, td {
+	border:solid 2px black;
+	text-align:center;
+	padding-right:10px;
+	padding-left:10px;
+}
+
+
